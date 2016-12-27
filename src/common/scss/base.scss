@@ -1,0 +1,24 @@
+$primaryColorDark: #00796B;
+$primaryColor: #009688;
+$primaryColorLight: #B2DFDB;
+$primaryColorText: #FFFFFF;
+$accentColor: #8BC34A;
+$primaryTextColor: #212121;
+$secondaryTextColor: #757575;
+$dividerColor: #BDBDBD;
+
+body, html {
+  font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei", "微软雅黑", SimSun, "宋体", STXihei, "华文细黑", Heiti, "黑体", sans-serif;
+}
+
+.clearfix {
+  display: inline-block;
+  &:after {
+    display: block;
+    content: '.';
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
