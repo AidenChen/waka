@@ -1,6 +1,65 @@
+@import "../../common/scss/index";
+
 .home {
-  height: 200px;
-  line-height: 200px;
-  color: red;
+  padding-top: 200px;
+  background: $primaryColor;
+  line-height: 20px;
+  text-align: center;
+}
+
+.hint {
+  height: 350px;
+}
+
+.hint__text {
+  display: block;
+  color: $primaryColorText;
+  cursor: default;
+  font-size: $fontSizeBiggest;
+  line-height: 60px;
+  @include forbid-select();
+}
+
+.hint__btn-wrapper {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.hint__btn {
+  display: inline-block;
+  width: 20%;
+  min-width: 85px;
+  max-width: 220px;
+  height: 50px;
+  margin: 0 10px;
+  background: $primaryColorText;
+  border-radius: 6px;
+  color: $primaryColor;
   cursor: pointer;
+  font-size: $fontSizeBigger;
+  line-height: 50px;
+  @include forbid-select();
+}
+
+.hint__btn:hover {
+  background: #fff;
+}
+
+.desc {
+  background: $dividerColor;
+}
+
+
+.desc__text {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 70px 0;
+  color: $primaryTextColor;
+  font-size: $fontSizeBigger;
+  line-height: 28px;
+}
+
+.entry {
+  height: 500px;
+  background: $primaryColorText;
 }

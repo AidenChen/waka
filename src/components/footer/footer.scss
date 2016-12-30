@@ -1,8 +1,8 @@
 @import "../../common/scss/index";
 
 .footer {
-  background-color: #727272;
-  height: 100px;
+  background-color: $primaryTextColor;
+  height: 300px;
   line-height: 50px;
   color: $primaryColorText;
 }
