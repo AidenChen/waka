@@ -1,22 +1,32 @@
 @import "../../common/scss/index";
 
 .home {
-  padding-top: 200px;
-  background: $primaryColor;
+  padding-top: 60px;
   line-height: 20px;
   text-align: center;
 }
 
 .hint {
-  height: 350px;
+  padding: 240px 0 300px;
+  background: url('./img/bg.png') 50% 50%;
+}
+
+.hint__title {
+  display: block;
+  margin-bottom: 20px;
+  color: $primaryColorText;
+  cursor: default;
+  font-size: $fontSizeBiggest;
+  line-height: 60px;
+  @include forbid-select();
 }
 
 .hint__text {
   display: block;
   color: $primaryColorText;
   cursor: default;
-  font-size: $fontSizeBiggest;
-  line-height: 60px;
+  font-size: $fontSizeBig;
+  line-height: 28px;
   @include forbid-select();
 }
 
@@ -46,7 +56,8 @@
 }
 
 .desc {
-  background: $dividerColor;
+  background: $primaryColorText;
+  text-align: left;
 }
 
 
@@ -60,6 +71,29 @@
 }
 
 .entry {
-  height: 500px;
-  background: $primaryColorText;
+  display: table;
+  width: 100%;
+  padding: 70px 0;
+  background: $primaryColor;
+}
+
+.entry-inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.entry__item {
+  float: left;
+  width: 33%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+.entry__item-title {
+  display: block;
+  margin-top: 20px;
+  color: $primaryColorText;
+  font-size: $fontSizeBigger;
+  line-height: 28px;
 }
