@@ -8,7 +8,7 @@
 
 .hint {
   padding: 240px 0 300px;
-  background: url('./img/bg.png') 50% 50%;
+  background: $primaryColor;
 }
 
 .hint__title {
@@ -62,31 +62,29 @@
 
 
 .desc__text {
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 70px 25px;
   color: $primaryTextColor;
   font-size: $fontSizeBigger;
   line-height: 28px;
 }
 
 .entry {
-  display: table;
   width: 100%;
   padding: 70px 0;
   background: $primaryColor;
 }
 
 .entry-inner {
+  display: flex;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
 
 .entry__item {
-  float: left;
-  width: 33%;
-  max-width: 300px;
+  flex: 1;
   cursor: pointer;
 }
 
